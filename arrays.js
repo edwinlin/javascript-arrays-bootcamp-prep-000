@@ -14,10 +14,16 @@ function addElementToEndOfArray(array, element){
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
-  newArray = array.splice(-1).push(element)
+  // newArray = array.splice().push(element)
   return newArray
 }
 
-function removeElementFromEndOfArray(){
-  return array.slice(-1)
+function 
+function destructivelyRemoveElementFromEndOfArray(array){
+  newArray = array.slice(0, array.length-1)
+  return newArray
+}
+
+function removeElementFromEndOfArray(array){
+  return array.slice(0, array.length-1)
 }
